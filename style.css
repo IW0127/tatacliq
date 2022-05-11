@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    background: #212121;
+    transition: 200ms;
+    transform: translate3d(0, 0, 0);
+}
+
+.headerDummyColor {
+    width: 30%;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #000000;
+    z-index: 0;
+}
+
+nav {
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    background: #212121;
+    margin: auto;
+    padding-left: 185px;
+    position: relative;
+    z-index: 1;
+}
+
+nav .logo {
+    width: 85px;
+    height: 55px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: url(https://www.tatacliq.com/src/general/components/img/group.svg) no-repeat;
+    background-size: auto 40px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+nav header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header .upHeader {
+    width: 100%;
+    height: 40px;
+    float: left;
+    background: #000000;
+    padding: 0px 0px 0px 20px;
+}
+
+.luxury {
+    width: auto;
+    height: 100%;
+    float: left;
+    line-height: 40px;
+    color: #fff;
+    font-size: 12px;
+    font-family: semibold;
+    cursor: pointer;
+}
+
+.luxury div {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+header .upHeader .upCategories {
+    width: auto;
+    height: 100%;
+    float: right;
+}
+
+header .upHeader .upCategories div {
+    width: auto;
+    height: 100%;
+    float: left;
+    line-height: 40px;
+    color: #fff;
+    font-size: 12px;
+    padding-left: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.lowerHeader {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0;
+}
+
+.lowerHeader,
+.leftTabHolder {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.catBrad {
+    width: auto;
+    height: auto;
+    color: #fff;
+    padding-right: 30px;
+    line-height: 60px;
+    margin-right: 25px;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    display: flex;
+    position: relative;
+    padding-left: 15px;
+    font-weight: bold;
+}
+
+.catBrad i,
+.gsearch {
+    margin: auto 4px;
+}
+
+.gsearch {
+    padding-left: 42px;
+    background: url(https://www.tatacliq.com/src/search/components/img/search-inactive.svg) no-repeat left;
+    background-size: 16px;
+    width: 100%;
+    height: 40px;
+    background-color: #4a4a4a;
+    border-radius: 5px;
+    border: none;
+    background-position-x: 11px;
+    color: #fff;
+    font-size: 14px;
+}
+
+::placeholder {
+    color: gray;
+    font-weight: bold;
+}
+
+input[type=search]:focus {
+    border: none;
+    outline: none;
+}
+
+.myBagShow {
+    background: url(https://www.tatacliq.com/src/general/components/img/orderhistorywhite.svg) no-repeat;
+}
+
+.mywishList {
+    background: url(https://www.tatacliq.com/src/general/components/img/WL4.svg) no-repeat;
+}
+
+.mywishList,
+.myBagShow {
+    width: 24px;
+    height: 100%;
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+    line-height: 33px;
+    background-size: auto 18px;
+    background-position: left center;
+    padding-left: 30px;
+    float: right;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: 300ms;
+    transform: scale(1);
+}
+
+.mywishList {
+    background-size: auto 25px;
+}
+
+
+.catArrow:first-child {
+    left: 0;
+}
+
+.catArrow {
+    min-width: 1013px;
+    width: 100%;
+    position: absolute;
+    height: 490px;
+    background: #fff;
+    top: 60px;
+    display: flex;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0 6px 6px 0 rgba(156, 156, 156, 0.24), 0 0 6px 0 rgba(0, 0, 0, 0.12);
+}
+
+.cat .catArrow {
+    left: 0;
+}
+
+.brad .catArrow {
+    left: -155px;
+}
