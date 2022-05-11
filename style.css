@@ -200,7 +200,6 @@ input[type=search]:focus {
     background-size: auto 25px;
 }
 
-
 .catArrow:first-child {
     left: 0;
 }
@@ -211,10 +210,12 @@ input[type=search]:focus {
     position: absolute;
     height: 490px;
     background: #fff;
+    color: #000000;
     top: 60px;
     display: flex;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0 6px 6px 0 rgba(156, 156, 156, 0.24), 0 0 6px 0 rgba(0, 0, 0, 0.12);
+    padding: 4px 21px;
 }
 
 .cat .catArrow {
@@ -223,4 +224,64 @@ input[type=search]:focus {
 
 .brad .catArrow {
     left: -155px;
+}
+
+.subCategory a {
+    color: #000;
+}
+
+.categoryDetails {
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.category {
+    width: 100%;
+    height: auto;
+    line-height: 60px;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    color: #808080;
+    cursor: pointer;
+    padding-right: 25px;
+    position: relative;
+    font-weight: bold;
+}
+
+.category:hover {
+    color: #000;
+}
+
+.category i {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(-5%, -50%);
+}
+
+.subCategory {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding-left: 40px;
+}
+
+.subCategory a {
+    width: 25%;
+    height: 31px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #808080;
+}
+
+a.subCategoryHeader {
+    color: #000;
 }
