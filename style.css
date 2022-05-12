@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background: rgb(236, 236, 236) none repeat scroll 0% 0%;
+}
+
 .header {
     width: 100%;
     height: 100px;
@@ -216,14 +220,7 @@ input[type=search]:focus {
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0 6px 6px 0 rgba(156, 156, 156, 0.24), 0 0 6px 0 rgba(0, 0, 0, 0.12);
     padding: 4px 21px;
-}
-
-.cat .catArrow {
     left: 0;
-}
-
-.brad .catArrow {
-    left: -155px;
 }
 
 .subCategory a {
@@ -282,6 +279,95 @@ input[type=search]:focus {
     color: #808080;
 }
 
-a.subCategoryHeader {
+.subCategory .brandImg {
+    width: 40%;
+    background-color: #f9f9f9;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 20px;
+}
+
+.subCategory .brandImg .ImgLink {
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9;
+}
+
+.ImgLink a img {
+    border-radius: 50%;
+    padding: 4%;
+
+}
+
+.subCategory a:hover {
+    color: #ff0000;
+}
+
+a.subCategoryHeader,
+a.subCategoryHeader:hover {
     color: #000;
+}
+
+.catBrad:hover {
+    background-color: #fff;
+    color: initial;
+}
+
+
+.hide {
+    display: none;
+}
+
+.catBrad:hover+.hide {
+    display: flex;
+}
+
+.hide:hover {
+    display: flex;
+}
+
+/* slide */
+.content {
+    position: relative;
+    top: 100px;
+}
+
+.outer-img-content {
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-slide {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#nextBtn {
+    right: 0;
+}
+
+#prevBtn {
+    left: 0;
+}
+
+#prevBtn,
+#nextBtn {
+    position: absolute;
+    top: 50%;
+    background: #d8d8d8;
+    border: none;
+    font-size: 25px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    cursor: pointer;
 }
