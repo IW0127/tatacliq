@@ -337,10 +337,8 @@ a.subCategoryHeader:hover {
 
 .outer-img-content {
     width: 75%;
-    height: auto;
     margin: 0 auto;
     overflow: hidden;
-    border-radius: 40px;
     position: relative;
 }
 
@@ -352,10 +350,12 @@ a.subCategoryHeader:hover {
 
 #nextBtn {
     right: 0;
+
 }
 
 #prevBtn {
     left: 0;
+
 }
 
 #prevBtn,
@@ -370,4 +370,108 @@ a.subCategoryHeader:hover {
     height: 60px;
     margin: 20px;
     cursor: pointer;
+    transform: translate(0, -50%);
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+.container .mainProduct,
+.discount,
+.adTata {
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 30px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 4%;
+}
+
+
+.mainProduct img,
+.white {
+    object-fit: fill;
+    max-width: 100%;
+    height: auto;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.discount {
+    margin-top: 20px;
+    padding: 0;
+}
+
+.discount .disImg {
+    border: 1px solid #fff;
+    margin: 4px;
+    border-radius: 6px;
+}
+
+.discount img,
+.adTata img {
+    height: auto;
+    max-width: 100%;
+    padding: 0;
+
+}
+
+.brand {
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.brand .nextPrev {
+    display: flex;
+    align-content: center;
+    justify-content: flex-end;
+    padding: 35px 0;
+}
+
+.nextPrev button {
+    padding: 12px 19px;
+    border: none;
+    background-color: #fff;
+    margin: 0 2px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.nextPrev .bPrev {
+    border-radius: 20px 0 0 20px;
+}
+
+.nextPrev .bNext {
+    border-radius: 0 20px 20px 0;
+}
+
+.brandImg {
+    display: flex;
+    align-content: center;
+    overflow: hidden;
+}
+
+.brandImg img {
+    object-fit: cover;
+    width: 22%;
+    margin: 17px;
+    height: auto;
+    display: block;
+    object-position: center;
+    border-radius: 5px;
+    transform: scale(1);
+    transition: 300ms;
+}
+
+.brandImg img:hover {
+    transform: scale(1.03);
+
 }
