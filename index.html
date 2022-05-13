@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
 
 <body>
@@ -44,15 +48,15 @@
                 <div class="lowerHeader">
                     <div class="leftTabHolder">
                         <div class="cat leftTabHolder">
-                            <div class="catBrad">
+                            <div class="catBrad" data-id="WomenFashion">
                                 Categories <i class="fa-solid fa-chevron-down"></i>
                             </div>
                             <div class="catArrow hide">
                                 <div class="categoryDetails">
-                                    <div class="category">Women's Fashion
+                                    <div class="category" data-id="WomenFashion">Women's Fashion
                                         <i class="fa-solid fa-chevron-right"></i>
                                     </div>
-                                    <div class="category">Men's Fashion
+                                    <div class="category" data-id="MenFashion">Men's Fashion
                                         <i class="fa-solid fa-chevron-right"></i>
                                     </div>
                                     <div class="category">TV & Appliances
@@ -75,7 +79,7 @@
                                         <i class="fa-solid fa-chevron-right"></i>
                                     </div>
                                 </div>
-                                <div class="subCategory">
+                                <div class="subCategory" id="WomenFashion">
                                     <a href="#" class="subCategoryHeader">Kurta Store</a>
                                     <a href="#" class="subCategoryHeader">The Dress Store</a>
                                     <a href="#" class="subCategoryHeader">Ethnic Wear</a>
@@ -137,16 +141,65 @@
                                     <a href="#" class="subCategoryHeader">Sunglasses</a>
                                     <a href="#">Cat Eye</a>
                                 </div>
+                                <div class="subCategory" id="MenFashion">
+                                    <a href="#" class="subCategoryHeader">Kurta Store</a>
+                                    <a href="#" class="subCategoryHeader">The Dress Store</a>
+                                    <a href="#" class="subCategoryHeader">Ethnic Wear</a>
+                                    <a href="#">Kurtas & Kurtis</a>
+                                    <a href="#">Suit Sets</a>
+                                    <a href="#">Sarees</a>
+                                    <a href="#">Bottoms</a>
+                                    <a href="#">Dupattas</a>
+                                    <a href="#">Blouses & Dress material</a>
+                                    <a href="#" class="subCategoryHeader">Inner & Nightwear</a>
+                                    <a href="#">Bras</a>
+                                    <a href="#">Panties</a>
+                                    <a href="#">Camisole</a>
+                                    <a href="#">Sleepwear & Robes</a>
+                                    <a href="#">Shapewear</a>
+                                    <a href="#" class="subCategoryHeader">Swim & Beachwear</a>
+                                    <a href="#" class="subCategoryHeader">Active & Sportswear</a>
+                                    <a href="#" class="subCategoryHeader">Western Wear</a>
+                                    <a href="#">Top & Tees</a>
+                                    <a href="#">Dresses</a>
+                                    <a href="#">Shirts</a>
+                                    <a href="#">Pant & Trousers</a>
+                                    <a href="#">Jeans</a>
+                                    <a href="#">Leggings</a>
+                                    <a href="#">Jumpsuits</a>
+                                    <a href="#">Skirts</a>
+                                    <a href="#">Jacket & Blazers</a>
+                                    <a href="#">Shrugs</a>
+                                    <a href="#">Sweatshirts</a>
+                                    <a href="#">Sweaters</a>
+                                    <a href="#">Curvy Fashion</a>
+                                    <a href="#" class="subCategoryHeader">View All Clothing</a>
+                                    <a href="#" class="subCategoryHeader">Footwear</a>
+                                    <a href="#">Casual</a>
+                                    <a href="#">Ethnic</a>
+                                    <a href="#">Formal</a>
+                                    <a href="#">Sneakers</a>
+                                    <a href="#">Boots</a>
+                                    <a href="#">Sports Shoes</a>
+                                    <a href="#">Flip-Flops</a>
+                                    <a href="#" class="subCategoryHeader">Watches</a>
+                                    <a href="#">Dressy Watches</a>
+                                    <a href="#">Casual Watches</a>
+                                    <a href="#">Smart Watches</a>
+                                    <a href="#">Formal Watches</a>
+                                    <a href="#">Sporty watches</a>
+                                    <a href="#" class="subCategoryHeader">Handbags & Wallets</a>
+                                </div>
                             </div>
                         </div>
                         <div class="brad">
-                            <div class="catBrad">
+                            <div class="catBrad" data-id="tvAppli">
                                 Brads <i class="fa-solid fa-chevron-down"></i>
                             </div>
                             <div class="catArrow hide" style="padding-right: 0;
                             padding-bottom: 0;">
                                 <div class="categoryDetails">
-                                    <div class="category">TV & Appliances
+                                    <div class="category" data-id="tvAppli">TV & Appliances
                                         <i class="fa-solid fa-chevron-right"></i>
                                     </div>
                                     <div class="category">Electronics
@@ -172,7 +225,7 @@
                                         <i class="fa-solid fa-chevron-right"></i>
                                     </div>
                                 </div>
-                                <div class="subCategory" style="align-content: space-between;">
+                                <div class="subCategory" id="tvAppli" style="align-content: space-between;">
                                     <a href="#" class="subCategoryHeader">Popular brands</a>
                                     <a href=""> LG</a>
                                     <a href=""> Samsung</a>
@@ -242,17 +295,15 @@
 
     <div class="content">
         <div class="outer-img-content">
-            <div class="img-slide">
-                <img src="./img/33907278446622.jpg" id="lastClone" alt="" style="width:100%; object-fit: contain;">
-                <img src="./img/33907278774302.jpg" alt="" style="width:100%; object-fit: contain;">
-                <img src="./img/33907278708766.jpg" alt="" style="width:100%; object-fit: contain;">
-                <img src="./img/33907278577694.jpg" alt="" style="width:100%; object-fit: contain;">
-                <img src="./img/33907278512158.jpg" alt="" style="width:100%; object-fit: contain;">
-                <img src="./img/33907281559582.jpg" alt="" style="width:100%; object-fit: contain;">
-                <img src="./img/33907278774302.jpg" id="firstClone" alt="" style="width:100%; object-fit: contain;">
-            </div>
             <button id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
             <button id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="img-slide">
+                <div> <img src="./img/33907278774302.jpg" alt=""> </div>
+                <div> <img src="./img/33907278708766.jpg" alt=""> </div>
+                <div> <img src="./img/33907278577694.jpg" alt=""> </div>
+                <div> <img src="./img/33907278512158.jpg" alt=""> </div>
+                <div> <img src="./img/33907281559582.jpg" alt=""> </div>
+            </div>
         </div>
         <div class="container">
             <div class="mainProduct">
@@ -307,10 +358,10 @@
             </div>
             <div class="brand">
                 <div class="nextPrev">
-                    <button class="bPrev"><i class="fa-solid fa-chevron-left"></i></button>
-                    <button class="bNext"><i class="fa-solid fa-chevron-right"></i></button>
+                    <button class="bPrev" id="BrandPrevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="bNext" id="BrandNextBtn"><i class="fa-solid fa-chevron-right"></i></button>
                 </div>
-                <div class="brandImg">
+                <div class="brandImg2">
                     <img src="./brand/33789562519582.jpg" alt="">
                     <img src="./brand/33789562388510.jpg" alt="">
                     <img src="./brand/33435568341022.jpg" alt="">
@@ -327,12 +378,41 @@
                     <img src="./brand/33753119162398.jpg" alt="">
                 </div>
             </div>
+            <div class="productImg">
+                <img src="./porduct/33922562392094.jpg" alt="">
+                <img src="./porduct/33922562457630.jpg" alt="">
+            </div>
         </div>
     </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <script src="./script.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.brandImg2').slick({
+                lazyLoad: 'ondemand',
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                prevArrow: $("#BrandPrevBtn"),
+                nextArrow: $("#BrandNextBtn")
+
+            });
+            $('.img-slide').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                prevArrow: $("#prevBtn"),
+                nextArrow: $("#nextBtn")
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>

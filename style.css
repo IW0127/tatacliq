@@ -299,7 +299,12 @@ input[type=search]:focus {
 .ImgLink a img {
     border-radius: 50%;
     padding: 4%;
+    transform: scale(1);
+    transition: 300ms;
+}
 
+.ImgLink a img:hover {
+    transform: scale(1.02);
 }
 
 .subCategory a:hover {
@@ -336,16 +341,23 @@ a.subCategoryHeader:hover {
 }
 
 .outer-img-content {
-    width: 75%;
-    margin: 0 auto;
-    overflow: hidden;
+    width: 80%;
     position: relative;
+    margin: 0 auto;
+
 }
 
 .img-slide {
-    display: flex;
     width: 100%;
-    height: 100%;
+}
+
+.img-slide img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.img-slide img {
+    object-fit: contain;
 }
 
 #nextBtn {
@@ -371,6 +383,7 @@ a.subCategoryHeader:hover {
     margin: 20px;
     cursor: pointer;
     transform: translate(0, -50%);
+    z-index: 4;
 }
 
 .container {
@@ -453,25 +466,38 @@ a.subCategoryHeader:hover {
     border-radius: 0 20px 20px 0;
 }
 
-.brandImg {
-    display: flex;
-    align-content: center;
-    overflow: hidden;
-}
 
-.brandImg img {
+.brandImg2 img {
     object-fit: cover;
-    width: 22%;
+    width: 20%;
     margin: 17px;
-    height: auto;
-    display: block;
     object-position: center;
     border-radius: 5px;
     transform: scale(1);
     transition: 300ms;
 }
 
-.brandImg img:hover {
+.brandImg2 img:hover {
     transform: scale(1.03);
 
+}
+
+.productImg {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    width: 100%;
+
+}
+
+.productImg img {
+    transform: scale(1);
+    transition: 300ms;
+    margin: 10px;
+    width: 35%;
+    object-fit: contain;
+}
+
+.productImg img:hover {
+    transform: scale(1.02);
 }

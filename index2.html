@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<!-- Add the slick-theme.css if you want default styling -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+<div class="outer-img-content">
+    <div class="img-slide">
+        <div> <img src="./img/33907278774302.jpg" alt=""> </div>
+        <div> <img src="./img/33907278708766.jpg" alt=""> </div>
+        <div> <img src="./img/33907278577694.jpg" alt=""> </div>
+        <div> <img src="./img/33907278512158.jpg" alt=""> </div>
+        <div> <img src="./img/33907281559582.jpg" alt=""> </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.img-slide').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true
+        });
+    });
+</script>
